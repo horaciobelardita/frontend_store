@@ -10,8 +10,17 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 50%;
 }
+
+@media (min-width:768px) {
+    html {
+    font-size: 62.5%;
+
+    }
+}
+
+
 
 *::after, *::before {
     box-sizing: inherit;
@@ -44,6 +53,7 @@ img {
 h1,h2,h3 {
     font-family: var(--fuentePrimaria);
     text-align: center;
+    color: var(--colorSecundario);
 }
 
 h1 {
