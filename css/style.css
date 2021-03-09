@@ -1,0 +1,49 @@
+:root {
+    --colorPrimario: #9c27b0;
+    --colorPrimarioOscuro: #891190;
+    --colorSecundario: #ffce00;
+    --colorSecundarioOscuro: rgb(237 287 2);
+    --blanco: #fff;
+    --negro: #000;
+    --fuentePrimaria: 'Staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*::after, *::before {
+    box-sizing: inherit;
+}
+
+
+/* Globales */
+body {
+    background-color: var(--colorPrimario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--blanco);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1,h2,h3 {
+    font-family: var(--fuentePrimaria);
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+
+}
+h3 {
+    font-size: 2.4rem;
+}
