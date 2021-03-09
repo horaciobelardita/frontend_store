@@ -13,14 +13,24 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <a href="/">
-            <img src="img/logo.png" alt="">
+            <img class="header__logo" src="img/logo.png" alt="">
         </a>
-        <nav>
-            <a href="">Tienda</a><a href="">Nosotros</a>
+        <nav class="menu">
+            <a class="menu__link menu__link--active" href="/">Tienda</a><a class="menu__link"
+                href="nosotros.html">Nosotros</a>
         </nav>
     </header>
+    <main class="container">
+        <h1>Nuestros Productos</h1>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Store - Todos los derechos reservados <span id="year"></span></p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
 </body>
 
 </html>
