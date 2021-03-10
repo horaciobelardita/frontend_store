@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/">
+            <img class="header__logo" src="img/logo.png" alt="">
+        </a>
+        <nav class="menu">
+            <a class="menu__link" href="/">Tienda</a><a class="menu__link menu__link--active"
+                href="nosotros.html">Nosotros</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Nosotros</h1>
+        <section class="about">
+            <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ipsam eum repellat
+                ratione officia
+                quas possimus praesentium fuga optio laborum illum mollitia voluptate vel debitis voluptatibus id
+                pariatur minus dolorum.</p>
+            <img class="about__image" src="img/nosotros.jpg" alt="">
+        </section>
+        <section class="buy">
+            <h2 class="buy__title">Porque comprar con nostros?</h2>
+            <div class="icons">
+                <div class="icon">
+                    <img src="img/icono_1.png" alt="">
+                    <h3 class="icon__title">Para Devs</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, expedita.</p>
+                </div>
+                <div class="icon">
+                    <img src="img/icono_2.png" alt="">
+                    <h3 class="icon__title">Para Devs</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, expedita.</p>
+                </div>
+                <div class="icon">
+                    <img src="img/icono_3.png" alt="">
+                    <h3 class="icon__title">Para Devs</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, expedita.</p>
+                </div>
+                <div class="icon">
+                    <img src="img/icono_4.png" alt="">
+                    <h3 class="icon__title">Para Devs</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, expedita.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Store - Todos los derechos reservados <span id="year"></span></p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+</body>
+
+</html>
