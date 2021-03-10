@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/">
+            <img class="header__logo" src="img/logo.png" alt="">
+        </a>
+        <nav class="menu">
+            <a class="menu__link" href="/">Tienda</a><a class="menu__link menu__link--active"
+                href="nosotros.html">Nosotros</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>React JS</h1>
+        <div class="product">
+            <img class="product__image" src="img/1.jpg" alt="">
+            <div class="product__content">
+                <p class="product__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic nesciunt culpa libero magni
+                    totam dolorem officia odio quidem excepturi?
+                </p>
+                <form class="form">
+                    <select class="form__field">
+                        <option value="" selected disabled>-- Seleccione una talla --</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <input class="form__field" type="number" min="1" step="1" placeholder="cantidad">
+                    <input class="form__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Store - Todos los derechos reservados <span id="year"></span></p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+</body>
+
+</html>
